@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+  font-family: "poppins" sans-serif;
+}
+
+body{
+  background:#f6f9ff;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  color:#434343;
+
+}
+
+main.cards{
+  display: flex;
+ 
+}
+
+main.cards section.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 450px;
+  margin-left: 150px;
+}
+
+main.cards section.card:first-child{
+  margin-left: 0;
+}
+
+
+main.cards section.card .icon {
+  width: 100px;
+  height: 100px;
+}
+
+main.cards section.card img {
+  width: 100%;
+}
+
+main.cards section.card h3{
+  margin: 16px 0;
+  font-size: 100%;
+
+}
+
+main.cards section.card span {
+  font-weight: 300;
+  max-width: 260px;
+  font-size: 90%;
+  margin-bottom: 16px;
+}
+
+main.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: white;
+
+}
+
+main.cards section.card.contact button {
+  background: linear-gradient(to right,#dfcbff, #9f66ff);
+}
+
+main.cards section.card.shop button {
+  background: linear-gradient(to right,#2e6cf0, #81bbe2 );
+}
+
+main.cards section.card.about button {
+  background: linear-gradient(to right, #ec57a4, #e09eb9);
+}
+
+main.cards section.card.contact {
+  box-shadow: 20px 20px 50px -30px  #9f66ff;
+}
+main.cards section.card.shop {
+  box-shadow: 20px 20px 50px -30px #2e6cf0;
+}
+main.cards section.card.about {
+  box-shadow: 20px 20px 50px -30px#ec57a4;
+}
+
+@media screen and (max-width: 545px){
+  main.cards {
+    flex-direction: column;
+  }
+  main.cards section.card {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  main.cards section.card:last-child{
+    margin-bottom: 0;
+  }
+
+  main.cards section.card button{
+    font-size:70% ;
+  }
+}
